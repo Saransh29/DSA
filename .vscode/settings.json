@@ -1,0 +1,21 @@
+{
+  "files.associations": {
+    "*.ejs": "html",
+    "*.cpp": "cpp",
+    "iostream": "cpp",
+    "new": "cpp",
+    "ostream": "cpp",
+    "stack": "cpp",
+    "cmath": "cpp",
+    "map": "cpp",
+    "*.tcc": "cpp",
+    "valarray": "cpp",
+    "ratio": "cpp",
+    "vector": "cpp",
+    "random": "cpp",
+    "chrono": "cpp",
+    "limits": "cpp",
+    "regex": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
+}
