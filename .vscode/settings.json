@@ -15,7 +15,10 @@
     "random": "cpp",
     "chrono": "cpp",
     "limits": "cpp",
-    "regex": "cpp"
+    "regex": "cpp",
+    "complex": "cpp",
+    "deque": "cpp",
+    "string": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
