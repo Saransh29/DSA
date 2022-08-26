@@ -7,6 +7,8 @@ protected:
     int a; // private rahe but inherit hojaye
 private:
     int b; // private and not inheritable
+public:
+    int c;
 };
 /*
 For a protected member:
@@ -16,7 +18,7 @@ Protected Members       Protected           Private              Protected
 Public Members          Public              Private              Protected
 
 */
-class Derived : protected Base
+class Derived : public Base
 {
 };
 int main()
@@ -27,4 +29,5 @@ int main()
     d1.b = 20; // will not work b is private in base class
 
     return 0;
+    
 }

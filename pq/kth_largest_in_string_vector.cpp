@@ -22,7 +22,7 @@ string kthLargestNumber(vector<string> &nums, int k)
 }
 
 // approach 1 using comparator
-struct comparator
+struct comparator1
 {
     bool operator()(string &s1, string &s2)
     {
@@ -103,10 +103,15 @@ struct comparator
         return a.size() > b.size();
     }
 };
+struct cmp2{
+    bool operator()(string &a, string &b){
+        return (a.size() == b.size()) ? a < b : a.size() < b.size();
+    }
+};
 string kthLargestNumber_pq(vector<string> &nums, int k)
 {
 
-    priority_queue<string, vector<string>, comparator> q;
+    priority_queue<string, vector<string>, cmp2> q;
 
     for (auto it : nums)
     {
